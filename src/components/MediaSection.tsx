@@ -1,168 +1,182 @@
 import { useState } from "react";
 import { Play, X } from "lucide-react";
 
-// Generate video placeholders
-const generateVideoPlaceholders = () => {
-  return [
+export const MediaSection = () => {
+  const [selectedVideo, setSelectedVideo] = useState<number | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const videos = [
     {
       id: 1,
-      title: "Scaling Tech Startups in 2024",
-      event: "TechCrunch Disrupt",
-      thumbnail: "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=640&h=360&fit=crop",
-      duration: "28:45"
+      title: "The Future of AI in Enterprise",
+      event: "TechCrunch Disrupt 2024",
+      thumbnail: "https://picsum.photos/800/450?random=1001",
+      duration: "18:42"
     },
     {
       id: 2,
-      title: "The Future of AI in Enterprise",
-      event: "Stanford AI Conference",
-      thumbnail: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=640&h=360&fit=crop",
-      duration: "35:12"
+      title: "Building Unicorns: Lessons from Silicon Valley",
+      event: "Y Combinator Demo Day",
+      thumbnail: "https://picsum.photos/800/450?random=1002",
+      duration: "25:15"
     },
     {
       id: 3,
-      title: "Building Global Remote Teams",
-      event: "Remote Work Summit",
-      thumbnail: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=640&h=360&fit=crop",
-      duration: "22:30"
+      title: "The Intersection of Web3 and Traditional Finance",
+      event: "Bloomberg Technology Summit",
+      thumbnail: "https://picsum.photos/800/450?random=1003",
+      duration: "32:08"
     },
     {
       id: 4,
-      title: "Venture Capital Trends 2024",
-      event: "Forbes Under 30",
-      thumbnail: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=640&h=360&fit=crop",
-      duration: "31:08"
+      title: "Scaling Global Teams in Remote-First Era",
+      event: "Harvard Business Review",
+      thumbnail: "https://picsum.photos/800/450?random=1004",
+      duration: "14:33"
     },
     {
       id: 5,
-      title: "Product-Market Fit Strategies",
-      event: "Product Hunt Meetup",
-      thumbnail: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=640&h=360&fit=crop",
-      duration: "25:47"
+      title: "Investment Strategies for Deep Tech Startups",
+      event: "Andreessen Horowitz Summit",
+      thumbnail: "https://picsum.photos/800/450?random=1005",
+      duration: "28:47"
     },
     {
       id: 6,
-      title: "Leadership in Crisis",
-      event: "Harvard Business Review",
-      thumbnail: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=640&h=360&fit=crop",
-      duration: "19:33"
+      title: "The Rise of Quantum Computing",
+      event: "MIT Technology Review",
+      thumbnail: "https://picsum.photos/800/450?random=1006",
+      duration: "22:19"
     },
     {
       id: 7,
-      title: "Sustainable Tech Innovation",
-      event: "Climate Tech Conference",
-      thumbnail: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=640&h=360&fit=crop",
-      duration: "42:15"
+      title: "Sustainable Tech: Profit Meets Purpose",
+      event: "World Economic Forum",
+      thumbnail: "https://picsum.photos/800/450?random=1007",
+      duration: "19:52"
     },
     {
       id: 8,
-      title: "The Next Billion Users",
-      event: "Google I/O Extended",
-      thumbnail: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=640&h=360&fit=crop",
-      duration: "38:22"
+      title: "Leadership in the Age of Disruption",
+      event: "Stanford Leadership Podcast",
+      thumbnail: "https://picsum.photos/800/450?random=1008",
+      duration: "41:36"
     }
   ];
-};
 
-export const MediaSection = () => {
-  const [selectedVideo, setSelectedVideo] = useState<number | null>(null);
-  const videos = generateVideoPlaceholders();
-
-  const openVideoModal = (videoId: number) => {
-    setSelectedVideo(videoId);
+  const openModal = (videoIndex: number) => {
+    setSelectedVideo(videoIndex);
+    setIsModalOpen(true);
   };
 
-  const closeVideoModal = () => {
+  const closeModal = () => {
+    setIsModalOpen(false);
     setSelectedVideo(null);
   };
 
   return (
-    <section className="py-24 bg-card/30">
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="section-headline mb-6">
-            In the
-            <span className="text-electric-blue"> Spotlight</span>
-          </h2>
-          <p className="body-large max-w-2xl mx-auto">
-            Keynotes, interviews, and thought leadership sessions from global conferences and media outlets
-          </p>
-        </div>
+    <section className="py-32 bg-card/20 relative">
+      {/* Accent Lines */}
+      <div className="absolute top-0 left-1/4 w-px h-24 bg-electric-blue/20"></div>
+      <div className="absolute bottom-0 right-1/3 w-px h-32 bg-electric-blue/10"></div>
+      
+      <div className="container mx-auto px-6 lg:px-12">
+        <div className="space-y-16">
+          {/* Editorial Header */}
+          <div className="text-center max-w-4xl mx-auto space-y-8">
+            <h2 className="section-headline-editorial">
+              IN THE
+              <span className="block text-electric-blue">SPOTLIGHT</span>
+            </h2>
+            <p className="text-xl text-secondary-text leading-relaxed">
+              Keynote presentations, interviews, and thought leadership moments that have shaped 
+              conversations in the global tech ecosystem.
+            </p>
+          </div>
 
-        {/* Video Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {videos.map((video) => (
-            <div
-              key={video.id}
-              className="video-card group cursor-pointer"
-              onClick={() => openVideoModal(video.id)}
+          {/* Video Grid */}
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {videos.map((video, index) => (
+              <div
+                key={video.id}
+                className="group cursor-pointer"
+                onClick={() => openModal(index)}
+              >
+                <div className="relative aspect-video bg-card rounded-xl overflow-hidden border border-card/50 transition-all duration-300 hover:border-electric-blue/30 hover:shadow-glow hover:-translate-y-1">
+                  {/* Thumbnail */}
+                  <img
+                    src={video.thumbnail}
+                    alt={video.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-background/40 group-hover:bg-background/20 transition-colors duration-300"></div>
+                  
+                  {/* Play Button */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-electric-blue/90 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-electric-blue group-hover:scale-110">
+                      <Play className="w-6 h-6 text-white ml-1" fill="currentColor" />
+                    </div>
+                  </div>
+                  
+                  {/* Duration Badge */}
+                  <div className="absolute bottom-3 right-3 bg-background/80 backdrop-blur-sm text-primary-text text-xs px-2 py-1 rounded">
+                    {video.duration}
+                  </div>
+                </div>
+                
+                {/* Video Info */}
+                <div className="mt-4 space-y-2">
+                  <h3 className="font-semibold text-primary-text leading-tight group-hover:text-electric-blue transition-colors">
+                    {video.title}
+                  </h3>
+                  <p className="text-sm text-secondary-text font-medium">
+                    {video.event}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Video Modal */}
+      {isModalOpen && selectedVideo !== null && (
+        <div className="fixed inset-0 bg-background/95 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="relative max-w-6xl w-full">
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute -top-12 right-0 text-primary-text hover:text-electric-blue transition-colors z-10"
             >
-              {/* Thumbnail */}
-              <div className="relative w-full h-48 bg-card">
-                <img
-                  src={`https://picsum.photos/640/360?random=${video.id + 200}`}
-                  alt={video.title}
-                  className="w-full h-full object-cover"
-                />
-                
-                {/* Play Button */}
-                <div className="video-play-button">
-                  <Play className="w-6 h-6 ml-1" />
-                </div>
-                
-                {/* Duration Badge */}
-                <div className="absolute bottom-2 right-2 px-2 py-1 bg-black/70 text-white text-xs font-medium rounded">
-                  {video.duration}
-                </div>
-                
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
-              </div>
-              
-              {/* Video Info */}
-              <div className="p-4 space-y-2">
-                <h3 className="font-semibold text-primary-text text-sm line-clamp-2 group-hover:text-electric-blue transition-colors">
-                  {video.title}
-                </h3>
-                <p className="text-secondary-text text-xs">
-                  {video.event}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Video Modal */}
-        {selectedVideo !== null && (
-          <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
-            <div className="relative w-full max-w-4xl aspect-video">
-              {/* Placeholder Video Player */}
-              <div className="w-full h-full bg-card rounded-lg flex items-center justify-center">
+              <X className="w-8 h-8" />
+            </button>
+            
+            {/* Video Container */}
+            <div className="aspect-video bg-card rounded-xl overflow-hidden">
+              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-card to-card/50">
                 <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-electric-blue rounded-full flex items-center justify-center mx-auto">
-                    <Play className="w-8 h-8 text-white ml-1" />
+                  <div className="w-24 h-24 bg-electric-blue/20 rounded-full flex items-center justify-center mx-auto">
+                    <Play className="w-8 h-8 text-electric-blue" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-primary-text mb-2">
-                      {videos.find(v => v.id === selectedVideo)?.title}
+                      {videos[selectedVideo].title}
                     </h3>
                     <p className="text-secondary-text">
-                      Video player would load here
+                      {videos[selectedVideo].event}
+                    </p>
+                    <p className="text-sm text-secondary-text mt-2">
+                      Video placeholder - {videos[selectedVideo].duration}
                     </p>
                   </div>
                 </div>
               </div>
-              
-              {/* Close Button */}
-              <button
-                onClick={closeVideoModal}
-                className="absolute top-4 right-4 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors"
-              >
-                <X className="w-6 h-6" />
-              </button>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </section>
   );
 };

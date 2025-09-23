@@ -122,6 +122,17 @@
 /* CEO Component Styles */
 @layer components {
   /* Typography Styles */
+  .mega-headline {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: clamp(4rem, 12vw, 8rem);
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    color: hsl(var(--primary-text));
+    text-transform: uppercase;
+    font-stretch: condensed;
+  }
+  
   .hero-headline {
     font-family: var(--font-heading);
     font-weight: 800;
@@ -130,6 +141,26 @@
     letter-spacing: -0.02em;
     color: hsl(var(--primary-text));
     text-shadow: 0 0 30px hsl(var(--electric-blue-glow));
+  }
+  
+  .hero-subtitle {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+    line-height: 1.7;
+    color: hsl(var(--secondary-text));
+    letter-spacing: -0.01em;
+  }
+  
+  .section-headline-editorial {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    color: hsl(var(--primary-text));
+    text-transform: uppercase;
+    font-stretch: condensed;
   }
   
   .section-headline {
@@ -149,7 +180,46 @@
     color: hsl(var(--secondary-text));
   }
   
-  /* Button Variants */
+  /* Modern Button Variants */
+  .btn-primary-modern {
+    background: hsl(var(--electric-blue));
+    color: hsl(var(--primary-text));
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    letter-spacing: -0.01em;
+  }
+  
+  .btn-primary-modern:hover {
+    background: hsl(var(--electric-blue-hover));
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px -5px hsl(var(--electric-blue) / 0.4);
+  }
+  
+  .btn-ghost-modern {
+    background: transparent;
+    color: hsl(var(--primary-text));
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid hsl(var(--primary-text) / 0.1);
+    cursor: pointer;
+    letter-spacing: -0.01em;
+  }
+  
+  .btn-ghost-modern:hover {
+    background: hsl(var(--primary-text) / 0.05);
+    border-color: hsl(var(--primary-text) / 0.2);
+    transform: translateY(-1px);
+  }
+  
+  /* Legacy Button Variants */
   .btn-primary {
     background: var(--button-primary);
     color: hsl(var(--primary-text));
@@ -187,6 +257,39 @@
   }
   
   /* Card Styles */
+  .portfolio-card {
+    background: var(--gradient-dark-surface);
+    border: 1px solid hsl(0 0% 20%);
+    border-radius: 16px;
+    padding: var(--space-lg);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-card);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio-card:hover {
+    border-color: hsl(var(--electric-blue) / 0.3);
+    box-shadow: 0 20px 40px -10px hsl(var(--electric-blue) / 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .portfolio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--electric-blue) / 0.5), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-card:hover::before {
+    opacity: 1;
+  }
+  
   .tech-card {
     background: var(--gradient-dark-surface);
     border: 1px solid hsl(0 0% 20%);
@@ -195,7 +298,7 @@
     transition: var(--transition-smooth);
     box-shadow: var(--shadow-card);
   }
-  
+
   .tech-card:hover {
     border-color: hsl(var(--card-hover));
     box-shadow: var(--shadow-glow);
