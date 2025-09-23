@@ -89,10 +89,10 @@ export const Footer = () => {
             
             {/* CTA */}
             <div className="pt-4">
-              <button className="btn-primary w-full text-sm">
+              <a href="#schedule-call" className="btn-primary w-full text-sm inline-flex items-center justify-center">
                 <Calendar className="w-4 h-4 mr-2" />
                 Schedule a Call
-              </button>
+              </a>
             </div>
           </div>
         </div>

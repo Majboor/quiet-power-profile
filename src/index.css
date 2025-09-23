@@ -125,7 +125,7 @@
   .mega-headline {
     font-family: var(--font-heading);
     font-weight: 900;
-    font-size: clamp(4rem, 12vw, 8rem);
+    font-size: clamp(3.5rem, 12vw, 9rem);
     line-height: 0.85;
     letter-spacing: -0.04em;
     color: hsl(var(--primary-text));

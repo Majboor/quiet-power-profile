@@ -3,6 +3,7 @@ import { JourneySection } from "@/components/JourneySection";
 import { MediaSection } from "@/components/MediaSection";
 import { PortfolioSection } from "@/components/PortfolioSection";
 import { CompetenciesSection } from "@/components/CompetenciesSection";
+import { CalendlySection } from "@/components/CalendlySection";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <MediaSection />
       <PortfolioSection />
       <CompetenciesSection />
+      <CalendlySection />
       <Footer />
     </div>
   );

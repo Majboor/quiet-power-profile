@@ -53,7 +53,7 @@ export const PortfolioSection = () => {
   ];
 
   return (
-    <section className="py-32 bg-background relative overflow-hidden">
+    <section id="portfolio" className="py-32 bg-background relative overflow-hidden">
       {/* Background Grid */}
       <div className="absolute inset-0 opacity-5">
         <div 

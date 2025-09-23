@@ -8,59 +8,59 @@ export const MediaSection = () => {
   const videos = [
     {
       id: 1,
-      title: "The Future of AI in Enterprise",
-      event: "TechCrunch Disrupt 2024",
-      thumbnail: "https://picsum.photos/800/450?random=1001",
+      title: "Strategic Leadership in Tech Innovation",
+      event: "Global Tech Summit 2024",
+      thumbnail: "/assets/9.MOV",
+      video: "/assets/9.MOV",
       duration: "18:42"
     },
     {
       id: 2,
-      title: "Building Unicorns: Lessons from Silicon Valley",
-      event: "Y Combinator Demo Day",
-      thumbnail: "https://picsum.photos/800/450?random=1002",
+      title: "Building Future-Ready Organizations",
+      event: "Innovation Conference",
+      thumbnail: "/assets/11.MOV",
+      video: "/assets/11.MOV",
       duration: "25:15"
     },
     {
       id: 3,
-      title: "The Intersection of Web3 and Traditional Finance",
-      event: "Bloomberg Technology Summit",
-      thumbnail: "https://picsum.photos/800/450?random=1003",
+      title: "The Future of Digital Transformation",
+      event: "Tech Leadership Forum",
+      thumbnail: "/assets/17.MOV",
+      video: "/assets/17.MOV",
       duration: "32:08"
     },
     {
       id: 4,
       title: "Scaling Global Teams in Remote-First Era",
       event: "Harvard Business Review",
-      thumbnail: "https://picsum.photos/800/450?random=1004",
+      thumbnail: "/assets/18.MOV",
+      video: "/assets/18.MOV",
       duration: "14:33"
     },
     {
       id: 5,
       title: "Investment Strategies for Deep Tech Startups",
-      event: "Andreessen Horowitz Summit",
-      thumbnail: "https://picsum.photos/800/450?random=1005",
+      event: "Venture Capital Summit",
+      thumbnail: "/assets/19.MOV",
+      video: "/assets/19.MOV",
       duration: "28:47"
     },
     {
       id: 6,
       title: "The Rise of Quantum Computing",
       event: "MIT Technology Review",
-      thumbnail: "https://picsum.photos/800/450?random=1006",
+      thumbnail: "/assets/20.MOV",
+      video: "/assets/20.MOV",
       duration: "22:19"
     },
     {
       id: 7,
       title: "Sustainable Tech: Profit Meets Purpose",
       event: "World Economic Forum",
-      thumbnail: "https://picsum.photos/800/450?random=1007",
+      thumbnail: "/assets/46.MOV",
+      video: "/assets/46.MOV",
       duration: "19:52"
-    },
-    {
-      id: 8,
-      title: "Leadership in the Age of Disruption",
-      event: "Stanford Leadership Podcast",
-      thumbnail: "https://picsum.photos/800/450?random=1008",
-      duration: "41:36"
     }
   ];
 
@@ -155,24 +155,14 @@ export const MediaSection = () => {
             
             {/* Video Container */}
             <div className="aspect-video bg-card rounded-xl overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-card to-card/50">
-                <div className="text-center space-y-4">
-                  <div className="w-24 h-24 bg-electric-blue/20 rounded-full flex items-center justify-center mx-auto">
-                    <Play className="w-8 h-8 text-electric-blue" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-primary-text mb-2">
-                      {videos[selectedVideo].title}
-                    </h3>
-                    <p className="text-secondary-text">
-                      {videos[selectedVideo].event}
-                    </p>
-                    <p className="text-sm text-secondary-text mt-2">
-                      Video placeholder - {videos[selectedVideo].duration}
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <video
+                src={videos[selectedVideo].video}
+                controls
+                className="w-full h-full object-cover"
+                poster={videos[selectedVideo].thumbnail}
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>

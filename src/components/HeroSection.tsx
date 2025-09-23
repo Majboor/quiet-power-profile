@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-background py-4 sm:py-8 lg:py-0">
       {/* CEO Image Background - Right Side */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/20"></div>
@@ -11,7 +11,7 @@ export const HeroSection = () => {
           <img
             src="https://i.ibb.co/MybqGSKH/62976cc4-ce5d-428c-93a3-d7c886ce8a8d.jpg"
             alt="CEO Portrait"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center lg:object-left-top"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/10 to-background/80"></div>
         </div>
@@ -28,13 +28,13 @@ export const HeroSection = () => {
       </div>
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid lg:grid-cols-12 gap-8 items-center min-h-screen">
+        <div className="grid lg:grid-cols-12 gap-8 items-center min-h-screen lg:min-h-screen">
           {/* Left Column - Dramatic Content */}
-          <div className="lg:col-span-7 space-y-12 animate-fade-in-up">
+          <div className="lg:col-span-6 xl:col-span-6 space-y-10 lg:space-y-12 animate-fade-in-up pt-16 sm:pt-20 md:pt-24 lg:pt-8">
             {/* Status Badge */}
-            <div className="inline-flex items-center space-x-2 px-3 py-1.5 bg-electric-blue/5 rounded-full border border-electric-blue/10">
-              <div className="w-1.5 h-1.5 bg-electric-blue rounded-full animate-pulse"></div>
-              <span className="text-electric-blue text-xs font-medium tracking-wide uppercase">Available for Strategic Consulting</span>
+            <div className="inline-flex items-center space-x-1 px-1 py-0.5 bg-electric-blue/5 rounded-full border border-electric-blue/10 mb-2 max-w-xs">
+              <div className="w-0.5 h-0.5 bg-electric-blue rounded-full animate-pulse flex-shrink-0"></div>
+              <span className="text-electric-blue text-xs font-medium tracking-wide uppercase truncate">Available for Strategic Consulting</span>
             </div>
             
             {/* Massive Stacked Headline */}
@@ -45,44 +45,44 @@ export const HeroSection = () => {
                 <span className="block text-electric-blue">OF TECH</span>
               </h1>
               
-              <p className="hero-subtitle mt-8 max-w-lg">
+              <p className="hero-subtitle mt-8 lg:mt-10 max-w-lg">
                 CEO & Founder with a proven track record of scaling global tech ventures and building 
                 high-impact teams across Silicon Valley and beyond.
               </p>
             </div>
             
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="btn-primary-modern group">
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              <a href="#schedule-call" className="btn-primary-modern group inline-flex items-center justify-center">
                 <Calendar className="w-4 h-4 mr-2" />
                 Book a Strategy Call
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-              </Button>
+              </a>
               
-              <Button variant="ghost" className="btn-ghost-modern">
+              <a href="#portfolio" className="btn-ghost-modern group inline-flex items-center justify-center">
                 View My Work
-              </Button>
+              </a>
             </div>
             
             {/* Achievement Stats */}
-            <div className="flex items-center space-x-12 pt-8">
+            <div className="flex items-center space-x-8 lg:space-x-12 pt-8 lg:pt-10">
               <div className="text-left">
-                <div className="text-3xl font-bold text-primary-text">50+</div>
-                <div className="text-sm text-secondary-text font-medium tracking-wide">Global Partners</div>
+                <div className="text-3xl lg:text-4xl font-bold text-primary-text">50+</div>
+                <div className="text-sm lg:text-base text-secondary-text font-medium tracking-wide">Global Partners</div>
               </div>
               <div className="text-left">
-                <div className="text-3xl font-bold text-primary-text">$100M+</div>
-                <div className="text-sm text-secondary-text font-medium tracking-wide">Revenue Generated</div>
+                <div className="text-3xl lg:text-4xl font-bold text-primary-text">$100M+</div>
+                <div className="text-sm lg:text-base text-secondary-text font-medium tracking-wide">Revenue Generated</div>
               </div>
               <div className="text-left">
-                <div className="text-3xl font-bold text-primary-text">15+</div>
-                <div className="text-sm text-secondary-text font-medium tracking-wide">Years Experience</div>
+                <div className="text-3xl lg:text-4xl font-bold text-primary-text">15+</div>
+                <div className="text-sm lg:text-base text-secondary-text font-medium tracking-wide">Years Experience</div>
               </div>
             </div>
           </div>
           
           {/* Right Column - Reserved for Image Background */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-6 xl:col-span-6 relative">
             {/* Floating accent elements */}
             <div className="absolute top-1/4 -right-4 w-2 h-16 bg-electric-blue/20 rounded-full animate-float opacity-60"></div>
             <div className="absolute bottom-1/3 -right-8 w-1 h-24 bg-electric-blue/10 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
