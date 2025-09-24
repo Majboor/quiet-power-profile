@@ -4,51 +4,35 @@ export const PortfolioSection = () => {
   const companies = [
     {
       id: 1,
-      name: "NeuralFlow",
-      description: "AI-powered workflow automation for enterprise teams",
+      name: "acceptly.ai",
+      description: "Reinventing the college application journey with AI.",
       sector: "Artificial Intelligence",
-      stage: "Series B",
-      logo: "NF"
+      stage: "Seed",
+      logo: "AA"
     },
     {
       id: 2,
-      name: "QuantumEdge",
-      description: "Next-gen quantum computing solutions for financial modeling",
-      sector: "Quantum Computing",
-      stage: "Series A",
-      logo: "QE"
+      name: "Visa Vasool",
+      description: "Empowering underprivileged students with access to world-class education.",
+      sector: "Social Impact",
+      stage: "Startup",
+      logo: "VV"
     },
     {
       id: 3,
-      name: "ChainLogistics",
-      description: "Blockchain-based supply chain transparency platform",
-      sector: "Blockchain",
-      stage: "Seed",
-      logo: "CL"
+      name: "LaazyPotato",
+      description: "Digital media marketing specializing in content creation and influencer partnerships.",
+      sector: "Digital Marketing",
+      stage: "Startup",
+      logo: "LP"
     },
     {
       id: 4,
-      name: "BioSynth",
-      description: "Synthetic biology platform for sustainable manufacturing",
-      sector: "Biotechnology",
-      stage: "Series C",
-      logo: "BS"
-    },
-    {
-      id: 5,
-      name: "AeroSpace Labs",
-      description: "Advanced propulsion systems for commercial space travel",
-      sector: "Aerospace",
-      stage: "Series A",
-      logo: "AL"
-    },
-    {
-      id: 6,
-      name: "CyberShield",
-      description: "Zero-trust security architecture for distributed systems",
-      sector: "Cybersecurity",
-      stage: "Series B",
-      logo: "CS"
+      name: "ParteaTr",
+      description: "Boutique bubble tea and Chinese food restaurant in Istanbul.",
+      sector: "Hospitality",
+      stage: "Startup",
+      logo: "PT"
     }
   ];
 
@@ -74,21 +58,21 @@ export const PortfolioSection = () => {
             </h2>
             <div className="space-y-6 text-secondary-text text-lg leading-relaxed">
               <p>
-                Strategic investments and advisory roles across the most promising deep-tech startups 
-                reshaping industries from AI to quantum computing.
+                Strategic leadership and founding roles across promising startups 
+                reshaping industries from AI to social impact.
               </p>
               <div className="flex items-center space-x-8 text-sm font-medium">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-electric-blue rounded-full"></div>
-                  <span>$100M+ Total Portfolio Value</span>
+                  <span>$1M+ Total Portfolio Value</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-electric-blue/60 rounded-full"></div>
-                  <span>6 Successful Exits</span>
+                  <span>3 Successful Ventures</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-electric-blue/40 rounded-full"></div>
-                  <span>2 Unicorns</span>
+                  <span>1 Social Impact Unicorn</span>
                 </div>
               </div>
             </div>

@@ -42,12 +42,12 @@ export const HeroSection = () => {
               <h1 className="mega-headline">
                 BUILDING
                 <span className="block">THE FUTURE</span>
-                <span className="block text-electric-blue">OF TECH</span>
+                <span className="block text-electric-blue">OF ED-TECH</span>
               </h1>
               
               <p className="hero-subtitle mt-8 lg:mt-10 max-w-lg">
-                CEO & Founder with a proven track record of scaling global tech ventures and building 
-                high-impact teams across Silicon Valley and beyond.
+                I'm Basil — Builder. Dreamer. CEO.
+                Founder of acceptly.ai, where we're reinventing college admissions with AI. I help students unlock opportunity and help teams build the future.
               </p>
             </div>
             
@@ -55,27 +55,27 @@ export const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <a href="#schedule-call" className="btn-primary-modern group inline-flex items-center justify-center">
                 <Calendar className="w-4 h-4 mr-2" />
-                Book a Strategy Call
+                Book a Meeting
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
               </a>
               
               <a href="#portfolio" className="btn-ghost-modern group inline-flex items-center justify-center">
-                View My Work
+                Learn More
               </a>
             </div>
             
             {/* Achievement Stats */}
             <div className="flex items-center space-x-8 lg:space-x-12 pt-8 lg:pt-10">
               <div className="text-left">
-                <div className="text-3xl lg:text-4xl font-bold text-primary-text">50+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-primary-text">5+</div>
                 <div className="text-sm lg:text-base text-secondary-text font-medium tracking-wide">Global Partners</div>
               </div>
               <div className="text-left">
-                <div className="text-3xl lg:text-4xl font-bold text-primary-text">$100M+</div>
-                <div className="text-sm lg:text-base text-secondary-text font-medium tracking-wide">Revenue Generated</div>
+                <div className="text-3xl lg:text-4xl font-bold text-primary-text">$500K+</div>
+                <div className="text-sm lg:text-base text-secondary-text font-medium tracking-wide">Capital Raised</div>
               </div>
               <div className="text-left">
-                <div className="text-3xl lg:text-4xl font-bold text-primary-text">15+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-primary-text">5+</div>
                 <div className="text-sm lg:text-base text-secondary-text font-medium tracking-wide">Years Experience</div>
               </div>
             </div>
@@ -91,7 +91,7 @@ export const HeroSection = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-8">
+      <div className="absolute bottom-2 right-8 z-20">
         <div className="flex items-center space-x-3 text-secondary-text">
           <div className="w-8 h-px bg-electric-blue/40"></div>
           <div className="text-xs font-medium tracking-wider uppercase">Scroll to explore</div>

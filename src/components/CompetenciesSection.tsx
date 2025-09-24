@@ -9,8 +9,8 @@ const competencies = [
   },
   {
     icon: Rocket,
-    title: "Venture Capital",
-    description: "Identifying and nurturing the next generation of unicorn startups with strategic investments and mentorship.",
+    title: "Venture Building",
+    description: "Identifying and nurturing the next generation of impactful startups with strategic vision and mentorship.",
     color: "text-purple-400"
   },
   {
@@ -55,7 +55,7 @@ export const CompetenciesSection = () => {
             <span className="text-electric-blue"> Competencies</span>
           </h2>
           <p className="body-large max-w-2xl mx-auto">
-            Expertise built through years of hands-on experience in building, scaling, and leading technology companies
+            Expertise built through years of hands-on experience in building, scaling, and leading technology and social impact ventures
           </p>
         </div>
 
@@ -93,22 +93,22 @@ export const CompetenciesSection = () => {
         {/* Stats Section */}
         <div className="mt-20 grid md:grid-cols-4 gap-8">
           <div className="text-center p-6 bg-gradient-dark-surface rounded-xl border border-card-hover/20">
-            <div className="text-3xl font-bold text-electric-blue mb-2">15+</div>
+            <div className="text-3xl font-bold text-electric-blue mb-2">5+</div>
             <div className="text-sm text-secondary-text">Years Leading</div>
           </div>
           
           <div className="text-center p-6 bg-gradient-dark-surface rounded-xl border border-card-hover/20">
-            <div className="text-3xl font-bold text-emerald-400 mb-2">50+</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-2">4</div>
             <div className="text-sm text-secondary-text">Companies Built</div>
           </div>
           
           <div className="text-center p-6 bg-gradient-dark-surface rounded-xl border border-card-hover/20">
-            <div className="text-3xl font-bold text-purple-400 mb-2">$500M+</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">$500K+</div>
             <div className="text-sm text-secondary-text">Capital Raised</div>
           </div>
           
           <div className="text-center p-6 bg-gradient-dark-surface rounded-xl border border-card-hover/20">
-            <div className="text-3xl font-bold text-orange-400 mb-2">100K+</div>
+            <div className="text-3xl font-bold text-orange-400 mb-2">10K+</div>
             <div className="text-sm text-secondary-text">Lives Impacted</div>
           </div>
         </div>

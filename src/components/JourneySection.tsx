@@ -98,20 +98,19 @@ export const JourneySection = () => {
               
               <div className="space-y-6 text-secondary-text leading-relaxed">
                 <p className="text-lg">
-                  From Silicon Valley boardrooms to global tech conferences, my journey has been defined by 
+                  From founding a boutique restaurant in Istanbul to building a social impact startup in Lahore, my journey has been defined by 
                   <span className="text-electric-blue font-medium"> turning ambitious visions into reality</span>.
                 </p>
                 
                 <p>
-                  Over the past 15 years, I've had the privilege of working alongside some of the brightest minds 
-                  in technology, building companies that have collectively generated over $100M in revenue and 
-                  impacted millions of users worldwide.
+                  Over the past 5 years, I've had the privilege of working alongside some of the brightest minds 
+                  in technology and education, building companies that have collectively impacted thousands of students and generated significant growth.
                 </p>
                 
                 <p>
-                  These moments capture the essence of that journey — from late-night hackathons in San Francisco 
-                  to keynote stages in New York, from intimate team meetings to global partnership celebrations. 
-                  Each image tells a story of <span className="text-primary-text font-medium">collaboration, innovation, and relentless pursuit of excellence</span>.
+                  These moments capture the essence of that journey — from leading debate teams in Shanghai 
+                  to late-night strategy sessions for acceptly.ai, from intimate team meetings to celebrating student successes. 
+                  Each image tells a story of <span className="text-primary-text font-medium">collaboration, innovation, and a relentless pursuit of excellence</span>.
                 </p>
                 
                 <p className="text-electric-blue font-medium">

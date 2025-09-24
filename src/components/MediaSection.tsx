@@ -8,8 +8,8 @@ export const MediaSection = () => {
   const videos = [
     {
       id: 1,
-      title: "Strategic Leadership in Tech Innovation",
-      event: "Global Tech Summit 2024",
+      title: "Strategic Leadership in Ed-Tech Innovation",
+      event: "Global Ed-Tech Summit 2024",
       thumbnail: "/assets/9.MOV",
       video: "/assets/9.MOV",
       duration: "18:42"
@@ -24,7 +24,7 @@ export const MediaSection = () => {
     },
     {
       id: 3,
-      title: "The Future of Digital Transformation",
+      title: "The Future of AI in College Admissions",
       event: "Tech Leadership Forum",
       thumbnail: "/assets/17.MOV",
       video: "/assets/17.MOV",
@@ -32,7 +32,7 @@ export const MediaSection = () => {
     },
     {
       id: 4,
-      title: "Scaling Global Teams in Remote-First Era",
+      title: "Scaling Global Teams in a Remote-First Era",
       event: "Harvard Business Review",
       thumbnail: "/assets/18.MOV",
       video: "/assets/18.MOV",
@@ -40,7 +40,7 @@ export const MediaSection = () => {
     },
     {
       id: 5,
-      title: "Investment Strategies for Deep Tech Startups",
+      title: "Investment Strategies for Impact Startups",
       event: "Venture Capital Summit",
       thumbnail: "/assets/19.MOV",
       video: "/assets/19.MOV",
@@ -48,7 +48,7 @@ export const MediaSection = () => {
     },
     {
       id: 6,
-      title: "The Rise of Quantum Computing",
+      title: "The Rise of AI-Powered Education",
       event: "MIT Technology Review",
       thumbnail: "/assets/20.MOV",
       video: "/assets/20.MOV",
@@ -90,7 +90,7 @@ export const MediaSection = () => {
             </h2>
             <p className="text-xl text-secondary-text leading-relaxed">
               Keynote presentations, interviews, and thought leadership moments that have shaped 
-              conversations in the global tech ecosystem.
+              conversations in the global ed-tech ecosystem.
             </p>
           </div>
 
