@@ -100,7 +100,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-electric-blue/10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-secondary-text text-sm">
-            © 2024 Basil Khan. All rights reserved. • Built with passion for innovation.
+            © 2025 Basil Khan. All rights reserved. • Built with passion for innovation.
           </div>
           
           <div className="flex items-center space-x-6 text-sm">

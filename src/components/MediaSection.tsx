@@ -9,7 +9,7 @@ export const MediaSection = () => {
     {
       id: 1,
       title: "Strategic Leadership in Ed-Tech Innovation",
-      event: "Global Ed-Tech Summit 2024",
+      event: "Global Ed-Tech Summit 2025",
       thumbnail: "/assets/9.MOV",
       video: "/assets/9.MOV",
       duration: "18:42"
