@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { JourneySection } from "@/components/JourneySection";
-import { MediaSection } from "@/components/MediaSection";
+// import { MediaSection } from "@/components/MediaSection";
 import { PortfolioSection } from "@/components/PortfolioSection";
 import { CompetenciesSection } from "@/components/CompetenciesSection";
 import { CalendlySection } from "@/components/CalendlySection";
@@ -11,7 +11,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <HeroSection />
       <JourneySection />
-      <MediaSection />
+      {/* <MediaSection /> */}
       <PortfolioSection />
       <CompetenciesSection />
       <CalendlySection />
