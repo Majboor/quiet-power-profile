@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# Basil Khan - Professional Portfolio
 
-## Project info
+A gift from Waleed to Basil - A modern, responsive portfolio website showcasing Basil Khan's journey as a builder, dreamer, and CEO.
 
-**URL**: https://lovable.dev/projects/ee57af64-d50c-4b7f-b730-6b459aac543f
+## About This Project
 
-## How can I edit this code?
+This is a custom-built portfolio website for Basil Khan, founder of acceptly.ai and serial entrepreneur. The site showcases his journey from founding a boutique restaurant in Istanbul to building social impact startups, highlighting his expertise in ed-tech innovation and AI-powered solutions.
 
-There are several ways of editing your application.
+## Project Features
 
-**Use Lovable**
+- **Modern Design**: Clean, professional layout with electric blue accents
+- **Responsive**: Optimized for all devices and screen sizes
+- **Interactive Elements**: Smooth scrolling, hover effects, and animations
+- **Contact Integration**: Embedded Calendly widget for easy scheduling
+- **Portfolio Showcase**: Displays key ventures and achievements
+- **Journey Timeline**: Visual storytelling of Basil's entrepreneurial path
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ee57af64-d50c-4b7f-b730-6b459aac543f) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Fast build tool and development server
+- **TypeScript** - Type-safe JavaScript development
+- **React** - Modern UI library
+- **shadcn-ui** - Beautiful, accessible UI components
+- **Tailwind CSS** - Utility-first CSS framework
 
-## How can I deploy this project?
+## Getting Started
 
-Simply open [Lovable](https://lovable.dev/projects/ee57af64-d50c-4b7f-b730-6b459aac543f) and click on Share -> Publish.
+To run this project locally:
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+# Step 1: Clone the repository
+git clone <YOUR_GIT_URL>
 
-Yes, you can!
+# Step 2: Navigate to the project directory
+cd quiet-power-profile
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Step 3: Install dependencies
+npm install
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+# Step 4: Start the development server
+npm run dev
+```
+
+## Project Structure
+
+- `src/components/` - React components for each section
+- `src/pages/` - Main page components
+- `public/assets/` - Images and media files
+- `src/lib/` - Utility functions and configurations
+
+## Sections
+
+1. **Hero Section** - Introduction with key statistics
+2. **The Journey** - Visual timeline of Basil's career
+3. **Portfolio Impact** - Showcase of ventures and companies
+4. **Core Competencies** - Skills and expertise areas
+5. **Let's Connect** - Contact and scheduling section
+6. **Footer** - Additional contact information and links
+
+## Contact Information
+
+- **Email**: basil@acceptly.ai
+- **LinkedIn**: [basilkhanbaloch](https://www.linkedin.com/in/basilkhanbaloch/)
+- **Company**: acceptly.ai
+
+## Deployment
+
+This project can be deployed to any static hosting service such as:
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
+
+## License
+
+© 2025 Basil Khan. All rights reserved. • Built with passion for innovation.
+
+---
+
+*A gift from Waleed to Basil - Celebrating entrepreneurship and innovation*
