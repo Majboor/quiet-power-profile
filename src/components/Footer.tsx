@@ -23,7 +23,7 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-sm">
                 <Mail className="w-4 h-4 text-electric-blue" />
-                <span className="text-secondary-text">hello@basilkhan.com</span>
+                <span className="text-secondary-text">basil@acceptly.ai</span>
               </div>
               
               <div className="flex items-center space-x-3 text-sm">
@@ -71,10 +71,10 @@ export const Footer = () => {
             {/* Social Links */}
             <div className="flex space-x-4">
               {[
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/basilkhanbaloch/", label: "LinkedIn" },
                 { icon: Twitter, href: "#", label: "Twitter" },
                 { icon: Github, href: "#", label: "GitHub" },
-                { icon: Mail, href: "#", label: "Email" }
+                { icon: Mail, href: "mailto:basil@acceptly.ai", label: "Email" }
               ].map((social) => (
                 <a
                   key={social.label}

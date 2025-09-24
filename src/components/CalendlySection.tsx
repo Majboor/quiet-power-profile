@@ -50,13 +50,13 @@ export const CalendlySection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="mailto:hello@basilkhan.com"
+                href="mailto:basil@acceptly.ai"
                 className="btn-primary-modern group inline-flex items-center justify-center"
               >
                 <span>Send Email</span>
               </a>
               <a 
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/basilkhanbaloch/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-ghost-modern group inline-flex items-center justify-center"
